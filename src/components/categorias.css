@@ -1,0 +1,33 @@
+/* Categoria.css */
+
+.categorias h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.categorias__cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+  }
+  
+  .categoria-card {
+    padding: 20px;
+    background-color: #ffa500; /* Fondo naranja */
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .categoria-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .categoria-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  

@@ -1,0 +1,10 @@
+/* Footer.css */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
