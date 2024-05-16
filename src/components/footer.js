@@ -1,7 +1,9 @@
 // Footer.js
 import React from 'react';
-import './footer.css'; // Importa el archivo de estilos CSS específico para el footer
+import './footer.css';
 import logo from '../images/logo-posta.png'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -11,13 +13,13 @@ const Footer = () => {
                 <div className="footer-logo">
                 <img src={logo} alt="Logo" />
                 </div>
-                <div className="footer-social-icons">
-                <a href="https://www.facebook.com/tupagina" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/tupagina" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-instagram"></i>
-                </a>
+                <div className="social-icons">
+                    <a href="https://www.instagram.com/trenque.tdm/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} className="icon instagram-icon" />
+                    </a>
+                    <a href="https://www.facebook.com/trenque.tdm?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} className="icon facebook-icon" />
+                    </a>
                 </div>
             </div>
         </div>
