@@ -4,7 +4,7 @@ import './categorias.css';
 
 const Categoria = () => {
   return (
-    <section className="categorias">
+    <section className="categorias" id="categorias">
       <h1>Categorias</h1>
       <div className="container">
         <div className="categorias__cont">

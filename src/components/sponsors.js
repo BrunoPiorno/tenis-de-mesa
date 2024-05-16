@@ -19,7 +19,7 @@ const sponsorImages = [logo1, logo2, logo3, logo4, logo6, logo7, logo8, logo9, l
 
 const SponsorsGrid = () => {
   return (
-    <section className="sponsors-grid">
+    <section className="sponsors-grid" id="sponsors">
       <div className="container">
         <h1>Nuestros Sponsors</h1>
         <div className="sponsors-grid__content">

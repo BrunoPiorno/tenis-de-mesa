@@ -12,9 +12,9 @@ const Header = () => {
         <div className="logo"><img src={logo} alt="Logo"/></div>
         <nav>
           <ul className="menu">
-            <li><a href="#" className="menu-link">Categorias</a></li>
-            <li><a href="#" className="menu-link">Sponsors</a></li>
-            <li><a href="#" className="menu-link">Inscripción</a></li>
+            <li><a href="#categorias" className="menu-link">Categorias</a></li>
+            <li><a href="#sponsors" className="menu-link">Sponsors</a></li>
+            <li><a href="#inscripcion" className="menu-link">Inscripción</a></li>
           </ul>
           <div className="social-icons">
             <a href="https://www.instagram.com/trenque.tdm/" target="_blank" rel="noopener noreferrer">
