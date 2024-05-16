@@ -14,7 +14,7 @@ const Categoria = () => {
             </div>
             <div className="categoria-card">
                 <h2>Intermedio</h2>
-                <p>Un jugador intermedio en el tenis de mesa es aquel que ha adquirido cierta experiencia y conocimiento sobre el juego. Pueden haber desarrollado habilidades básicas de golpeo, movimiento y estrategia, y están trabajando en mejorar su juego mediante la práctica regular y la participación en partidos informales.</p>
+                <p>Un jugador intermedio en el tenis de mesa es aquel que ha adquirido cierta experiencia y conocimiento sobre el juego. Pueden haber desarrollado habilidades básicas de golpeo, movimiento y estrategia.</p>
             </div>
             <div className="categoria-card">
                 <h2>Avanzado</h2>
