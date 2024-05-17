@@ -39,6 +39,7 @@
 
 
 
+
 button {
   position: absolute;
   top: 50%;
@@ -62,4 +63,11 @@ button a {
 button:hover {
   background-color: black; 
   color: white;
+}
+
+@media (max-width: 750px) {
+  .hero-title {
+    font-size: 30px;
+    width: 100%;
+  }
 }

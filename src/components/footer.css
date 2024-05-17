@@ -14,3 +14,13 @@
   .footer-logo img {
     width: 100px;
   }
+
+  @media (max-width: 750px) {
+    .footer-logo img {
+        width: 60px;
+      }
+
+    footer .social-icons {
+    font-size: 25px;
+    }
+  }

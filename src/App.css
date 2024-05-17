@@ -49,7 +49,14 @@ header {
 }
 
 .container {
+  width: calc(100% - 60px);
   padding: 0 30px;
+}
+@media (max-width: 750px) {
+  .container {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
 }
 
 
