@@ -14,8 +14,9 @@ import logo10 from '../images/logo-10.jpeg';
 import logo11 from '../images/logo-11.jpeg';
 import logo12 from '../images/logo-12.jpeg';
 import logo13 from '../images/logo-13.jpeg';
+import logo14 from '../images/logo-14.png';
 
-const sponsorImages = [logo1, logo2, logo3, logo4, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13];
+const sponsorImages = [logo1, logo2, logo3, logo4, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14];
 
 const SponsorsGrid = () => {
   return (
