@@ -3,6 +3,7 @@ import Header from './components/header';
 import Hero from './components/hero';
 import Categorias from './components/categorias';
 import SponsorsGrid from './components/sponsors';
+import MainComponent from './components/maincomponent';
 import Form from './components/form';
 import Footer from './components/footer';
 import './App.css';
@@ -15,6 +16,7 @@ const App = () => {
       <Categorias />
       <SponsorsGrid />
       <Form />
+      <MainComponent />
       <Footer />
     </div>
   );

@@ -10,19 +10,19 @@ const Categoria = () => {
         <div className="categorias__cont">
             <div className="categoria-card">
                 <h2>Principiante</h2>
-                <p>Un principiante en el tenis de mesa es aquel que ha jugado muy pocas veces y está comenzando a familiarizarse con el deporte. Están en las etapas iniciales de aprendizaje y pueden estar explorando las reglas básicas y técnicas fundamentales del juego.</p>
+                <p>Los jugadores de esta división, mayoritariamente son jugadores que comienzan a realizar sus primeras experiencias en torneos. en su mayoría son jugadores quejuegan en fora recreativa, no suelen practicar en clubes, juegan en forma intuitiv.</p>
             </div>
             <div className="categoria-card">
                 <h2>Intermedio</h2>
-                <p>Un jugador intermedio en el tenis de mesa es aquel que ha adquirido cierta experiencia y conocimiento sobre el juego. Pueden haber desarrollado habilidades básicas de golpeo, movimiento y estrategia.</p>
+                <p>Son jugadores con poca experiencia y algunos comienzan a mostrar técnicas aprendidas tomando clases en clubes. algunos ya utilizan materiales de competicion y cuentan con mayor experiencia competiendo.</p>
             </div>
             <div className="categoria-card">
                 <h2>Avanzado</h2>
-                <p>Un jugador avanzado en el tenis de mesa es aquel que dedica tiempo y esfuerzo significativos a la práctica y perfeccionamiento del juego. Han alcanzado un nivel de habilidad considerable y pueden participar en competiciones locales o regionales. Los jugadores avanzados están constantemente buscando mejorar su técnica, táctica y condición física para competir al más alto nivel.</p>
+                <p>Son jugadores que muestran un dominio más amplio de técnicas, tácticas y estrategias de juego. En su mayoría practican regularmente en clubes y muestran progresos en el dominio de técnicas mas avanzadas de juego, como la realización de topspins y otros efectos, tanto de drive como de revés.</p>
             </div>
             <div className="categoria-card">
                 <h2>Primera</h2>
-                <p>Un jugador de primera en el tenis de mesa es aquel que ha alcanzado un nivel de dominio excepcional en el deporte y compite profesionalmente a nivel nacional o internacional. Han dedicado años de entrenamiento riguroso y competiciones para alcanzar este nivel, y están entre los mejores jugadores en su categoría. Los jugadores de primera son reconocidos por su habilidad técnica, inteligencia táctica y capacidad para enfrentar desafíos competitivos en el más alto nivel.</p>
+                <p>Son jugadores altamente experimentados que entrenan en clubes o por su cuenta, pero con alta exigencia. Utilizan gomas y maderas de competición y poseen amplios conocimientos sobre técnicas y tácticas de juego</p>
             </div>
         </div>
       </div>

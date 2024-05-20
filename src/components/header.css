@@ -16,6 +16,7 @@
 .header nav {
   display: flex;
   align-items: center;
+  transition: max-height 0.3s ease;
 }
 
 .header nav .container{
@@ -90,6 +91,7 @@
 
   .header nav.open {
     display: flex;
+    transition: max-height 0.3s ease;
   }
 
   .header nav .container{

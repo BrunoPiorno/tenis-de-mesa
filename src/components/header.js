@@ -1,4 +1,3 @@
-// Header.js
 import React, { useState } from 'react';
 import './header.css'; 
 import logo from '../images/logo-posta.png'; 
@@ -14,6 +13,10 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -24,10 +27,11 @@ const Header = () => {
           </div>
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
             <div className="container">
-              <ul className="menu">
+              <ul className="menu" onClick={closeMenu}>
                 <li><a href="#categorias" className="menu-link">Categorias</a></li>
                 <li><a href="#sponsors" className="menu-link">Sponsors</a></li>
                 <li><a href="#inscripcion" className="menu-link">Preinscripción</a></li>
+                <li><a href="#torneos" className="menu-link">Torneos</a></li>
               </ul>
               <div className="social-icons">
                 <a href="https://www.instagram.com/trenque.tdm/" target="_blank" rel="noopener noreferrer">
