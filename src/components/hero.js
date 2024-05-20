@@ -11,7 +11,7 @@ const Hero = () => {
       </div>
       <div className="hero-content">
         <h1 className="hero-title">TENIS DE MESA <br/> TRENQUE LAUQUEN</h1>
-        <button><a href="link-externo">Inscripción Al Torneo</a></button>
+        <button><a href="link-externo">Preinscripción Al Torneo</a></button>
       </div>
     </section>
   );

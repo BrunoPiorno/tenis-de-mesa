@@ -52,12 +52,6 @@ header {
   width: calc(100% - 60px);
   padding: 0 30px;
 }
-@media (max-width: 750px) {
-  .container {
-    width: calc(100% - 30px);
-    padding: 0 15px;
-  }
-}
 
 
 .google-form iframe {width: 100%;}
@@ -65,7 +59,11 @@ header {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;}
-
+  @media (max-width: 750px) {
+    .google-form h2    {
+      font-size: 25px;
+    }
+  }
   html {
     scroll-behavior: smooth;
   }
