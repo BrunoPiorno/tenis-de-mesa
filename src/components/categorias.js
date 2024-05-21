@@ -10,7 +10,7 @@ const Categoria = () => {
         <div className="categorias__cont">
             <div className="categoria-card">
                 <h2>Principiante</h2>
-                <p>LLos jugadores de esta división, mayoritariamente son jugadores que comienzan a realizar sus primeras experiencias en torneos. En su mayoría, son jugadores que juegan en forma recreativa, no suelen practicar en clubes</p>
+                <p>Los jugadores de esta división, mayoritariamente son jugadores que comienzan a realizar sus primeras experiencias en torneos. En su mayoría, son jugadores que juegan en forma recreativa, no suelen practicar en clubes</p>
             </div>
             <div className="categoria-card">
                 <h2>Intermedio</h2>
