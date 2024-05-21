@@ -9,7 +9,7 @@ const MainComponent = () => {
       day: 'Sábado',
       startTime: '10:30 AM',
       location: 'Sede Barrio Alegre',
-      text: 'TORNEO TENIS DE MESA, "Francisco “TITI” D’Ambruoso con servicio de cantina'
+      text: 'TORNEO TENIS DE MESA, "Francisco “TITI” D’Ambruoso" con servicio de cantina'
     },
   ];
 
