@@ -4,7 +4,7 @@ import logo from '../images/logo-posta.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import WhatsApp from './whatsapp'; 
+import WhatsApp from '../components/whatsapp'; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

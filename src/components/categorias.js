@@ -1,6 +1,6 @@
 // Categoria.js
 import React from 'react';
-import './categorias.css'; 
+import '../style/categorias.css'; 
 
 const Categoria = () => {
   return (

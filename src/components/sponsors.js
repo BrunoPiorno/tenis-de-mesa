@@ -1,6 +1,6 @@
 // SponsorsGrid.js
 import React from 'react';
-import './sponsors.css'; // Importa el archivo de estilos CSS específico para la grilla de sponsors
+import '../style/sponsors.css';
 
 import logo1 from '../images/logo-1.png';
 import logo2 from '../images/logo-2.png';

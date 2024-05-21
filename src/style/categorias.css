@@ -9,12 +9,12 @@
 .categorias__cont {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 40px;
   }
   
   .categoria-card {
     padding: 20px;
-    background-color: #ffa500; /* Fondo naranja */
+    background-color: #ffa500; 
     color: white;
     border-radius: 5px;
   }

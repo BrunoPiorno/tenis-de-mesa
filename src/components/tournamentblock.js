@@ -1,5 +1,5 @@
 import React from 'react';
-import './tournamentBlock.css';
+import '../style/tournamentBlock.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
