@@ -39,6 +39,16 @@
     grid-column: span 2;
   }
   
+  .tournament-finalizado {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .finalizado-icon {
+    margin-right: 5px;
+  }
   @media (max-width: 750px) {
     .torneos h2 {
         font-size: 24px;

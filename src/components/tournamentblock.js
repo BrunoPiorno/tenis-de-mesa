@@ -1,10 +1,13 @@
 import React from 'react';
 import '../style/tournamentBlock.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faClock, faMapMarkerAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 const TournamentBlock = ({ tournament }) => {
   const { date, day, startTime, location, text } = tournament;
+  const tournamentDate = new Date(date.split('/').reverse().join('-'));
+  const today = new Date();
+  const isPast = tournamentDate < today;
 
   return (
     <div className="tournament-block">
@@ -23,6 +26,12 @@ const TournamentBlock = ({ tournament }) => {
       <div className="tournament-text">
         <p>{text}</p>
       </div>
+      {isPast && (
+        <div className="tournament-finalizado">
+          <FontAwesomeIcon icon={faTimesCircle} className="finalizado-icon" />
+          <span>Finalizado</span>
+        </div>
+      )}
     </div>
   );
 }
