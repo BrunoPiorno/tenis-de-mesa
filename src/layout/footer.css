@@ -24,3 +24,15 @@
     font-size: 25px;
     }
   }
+  
+  .footer p {
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 0;
+  }
+
+  .footer p a {
+    color: orange;
+    margin-top: 5px;
+  }

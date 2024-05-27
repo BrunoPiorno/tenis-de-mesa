@@ -10,9 +10,7 @@ const Footer = () => {
     <footer className="footer">
         <div className="container">
             <div className="footer-content">
-                <div className="footer-logo">
-                <img src={logo} alt="Logo" />
-                </div>
+                <div className="footer-logo"><img src={logo} alt="Logo" /></div>
                 <div className="social-icons">
                     <a href="https://www.instagram.com/trenque.tdm/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faInstagram} className="icon instagram-icon" />
@@ -22,6 +20,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
+            <p>Sitio Realizado por Bruno Piorno Polucci <br/> <a href="whatsapp://send?phone=239460230">239460230</a></p>
         </div>
     </footer>
   );
