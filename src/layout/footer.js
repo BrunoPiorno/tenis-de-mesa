@@ -20,7 +20,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <p>Sitio Realizado por Bruno Piorno Polucci <br/> <a href="whatsapp://send?phone=239460230">239460230</a></p>
+            <p>Sitio Realizado por Bruno Piorno Polucci <br/> <a href="https://api.whatsapp.com/send?phone=542392460230">Cel: 239460230</a></p>
         </div>
     </footer>
   );
