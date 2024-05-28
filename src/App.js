@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import Header from './layout/header';
 import Hero from './layout/hero';
 import Categorias from './components/categorias';
@@ -7,22 +8,38 @@ import MainComponent from './components/maincomponent';
 import Form from './components/form';
 import Footer from './layout/footer';
 import './App.css';
-import ReactGA from 'react-ga';
-
-ReactGA.initialize('TU_ID_DE_SEGUIMIENTO');
+import initializeAnalytics from './analytics';
+import ReactGA from 'react-ga4';
 
 const App = () => {
+  useEffect(() => {
+    initializeAnalytics();
+  }, []);
+
   return (
-    <div>
-      <Header />
-      <Hero />
-      <Categorias />
-      <SponsorsGrid />
-      <Form />
-      <MainComponent />
-      <Footer />
-    </div>
+    <Router>
+      <Analytics />
+      <div>
+        <Header />
+        <Hero />
+        <Categorias />
+        <SponsorsGrid />
+        <Form />
+        <MainComponent />
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
+
+const Analytics = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+  }, [location]);
+
+  return null;
+};
 
 export default App;
