@@ -24,7 +24,6 @@ const App = () => {
         <Hero />
         <Categorias />
         <SponsorsGrid />
-        <Form />
         <MainComponent />
         <Footer />
       </div>
