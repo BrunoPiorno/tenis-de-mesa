@@ -10,8 +10,8 @@ const Hero = () => {
         <img src={pingpongImage} alt="Imagen de Hero" className="hero-image" /> 
       </div>
       <div className="hero-content">
-        <h1 className="hero-title">TENIS DE MESA <br/> TRENQUE LAUQUEN</h1>
-        {/* <button><a href="#inscripcion">Preinscripción Al Torneo</a></button> */}
+        <h1 className="hero-title">COPA INVIERNO 2024 <br/> TRENQUE LAUQUEN</h1>
+        <button><a href="#inscripcion">Preinscripción Al Torneo</a></button>
       </div>
     </section>
   );

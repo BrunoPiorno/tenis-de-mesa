@@ -11,6 +11,15 @@ const MainComponent = () => {
       location: 'Sede Barrio Alegre',
       text: 'TORNEO TENIS DE MESA, "Francisco “TITI” D’Ambruoso" con servicio de cantina'
     },
+    {
+      date: '10/08/2024',
+      day: 'Sábado',
+      startTime: '9:30 AM',
+      location: 'Sede Barrio Alegre',
+      text: 'COPA INVIERNO 2024, con servicio de cantina',
+      aperturaDeInscripcion: '25/07',
+      cierreDeInscripcion: '09/08 - 12:00 AM'
+    },
   ];
 
   return (

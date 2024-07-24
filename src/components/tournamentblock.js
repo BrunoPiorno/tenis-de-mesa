@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faClock, faMapMarkerAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 const TournamentBlock = ({ tournament }) => {
-  const { date, day, startTime, location, text } = tournament;
+  const { date, day, startTime, location, text, aperturaDeInscripcion, cierreDeInscripcion } = tournament;
   const tournamentDate = new Date(date.split('/').reverse().join('-'));
   const today = new Date();
   const isPast = tournamentDate < today;
@@ -26,6 +26,16 @@ const TournamentBlock = ({ tournament }) => {
       <div className="tournament-text">
         <p>{text}</p>
       </div>
+      {aperturaDeInscripcion && (
+        <div className="tournament-inscription">
+          <p><strong>Apertura de Inscripción:</strong> {aperturaDeInscripcion}</p>
+        </div>
+      )}
+      {cierreDeInscripcion && (
+        <div className="tournament-inscription">
+          <p><strong>Cierre de Inscripción:</strong> {cierreDeInscripcion}</p>
+        </div>
+      )}
       {isPast && (
         <div className="tournament-finalizado">
           <FontAwesomeIcon icon={faTimesCircle} className="finalizado-icon" />
