@@ -63,6 +63,10 @@ header {
     .google-form h2    {
       font-size: 25px;
     }
+    .container {
+      width: calc(100% - 30px);
+      padding: 0 15px;
+    }
   }
   html {
     scroll-behavior: smooth;

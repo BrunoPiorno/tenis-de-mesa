@@ -53,4 +53,8 @@
     .torneos h2 {
         font-size: 24px;
     }
+    .tournament-grid {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
