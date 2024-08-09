@@ -8,7 +8,9 @@ const GoogleForm = () => {
         <div className="google-form">
             <div className="container">
                 <h2>Formulario De Preinscripción</h2>
-                <iframe
+
+                <p>Preinscripción Finalizada</p>
+                {/* <iframe
                   src={formUrl}
                   width="640"
                   height="1291"
@@ -17,7 +19,7 @@ const GoogleForm = () => {
                   marginWidth="0"
                 >
                   Cargando…
-                </iframe>
+                </iframe> */}
             </div>
         </div>
     </section>
