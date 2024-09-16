@@ -20,6 +20,15 @@ const MainComponent = () => {
       aperturaDeInscripcion: '25/07',
       cierreDeInscripcion: '09/08 - 12:00 AM'
     },
+    {
+      date: '28/09/2024',
+      day: 'Sábado',
+      startTime: '10 AM',
+      location: 'Sede Barrio Alegre',
+      text: '4° TORNEO DE TENIS DE MESA, con servicio de cantina',
+      aperturaDeInscripcion: '28/09',
+      cierreDeInscripcion: '27/09 - 12:00 AM'
+    },
   ];
 
   return (
