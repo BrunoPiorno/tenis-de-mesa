@@ -26,7 +26,7 @@ const MainComponent = () => {
       startTime: '10 AM',
       location: 'Sede Barrio Alegre',
       text: '4° TORNEO DE TENIS DE MESA, con servicio de cantina',
-      aperturaDeInscripcion: '28/09',
+      aperturaDeInscripcion: '16/09',
       cierreDeInscripcion: '27/09 - 12:00 AM'
     },
   ];
