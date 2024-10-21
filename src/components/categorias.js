@@ -22,7 +22,7 @@ const Categoria = () => {
             </div>
             <div className="categoria-card">
                 <h2>Avanzado</h2>
-                <p>SSon jugadores que demuestran un dominio más amplio de técnicas, tácticas y estrategias de juego. En su mayoría, practican regularmente en clubes y han mostrado progresos en el dominio de técnicas más avanzadas, como la ejecución de topspins y otros efectos.</p>
+                <p>Son jugadores que demuestran un dominio más amplio de técnicas, tácticas y estrategias de juego. En su mayoría, practican regularmente en clubes y han mostrado progresos en el dominio de técnicas más avanzadas, como la ejecución de topspins y otros efectos.</p>
             </div>
             <div className="categoria-card">
                 <h2>Primera</h2>
