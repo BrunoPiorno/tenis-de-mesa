@@ -29,6 +29,15 @@ const MainComponent = () => {
       aperturaDeInscripcion: '16/09',
       cierreDeInscripcion: '27/09 - 12:00 AM'
     },
+    {
+      date: '02/11/2024',
+      day: 'Sábado',
+      startTime: '9:45 AM',
+      location: 'Sede Barrio Alegre',
+      text: 'Copa "Naicó", con servicio de cantina',
+      aperturaDeInscripcion: '26/11',
+      cierreDeInscripcion: '01/11 - 12:00 AM'
+    },
   ];
 
   return (

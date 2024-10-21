@@ -19,11 +19,12 @@
   }
 
   .tournament-block svg {
-    color: orange;
+    color: #1C4857;
   }
   
   .tournament-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
   .tournament-icon {

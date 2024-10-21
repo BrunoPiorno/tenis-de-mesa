@@ -58,7 +58,7 @@
 }
 
 .menu-link {
-  color: orange; 
+  color: #fff;
   text-decoration: none; 
   font-weight: bold;
 }
@@ -108,7 +108,7 @@
   }
 
   .menu-link {
-    color: orange;
+    color: #DB6C65;
   }
 
   .social-icons {

@@ -9,21 +9,26 @@ const Categoria = () => {
       <div className="container">
         <div className="categorias__cont">
             <div className="categoria-card">
+                <h2>Menores</h2>
+                <p>Son jugadores hasta 12 años. El énfasis en la diversión es crucial, ya que ayuda a cultivar su amor por el deporte desde una edad temprana.</p>
+                </div>
+            <div className="categoria-card">
                 <h2>Principiante</h2>
-                <p>Los jugadores de esta división, mayoritariamente son jugadores que comienzan a realizar sus primeras experiencias en torneos. En su mayoría, son jugadores que juegan en forma recreativa, no suelen practicar en clubes</p>
+                <p>Los jugadores de esta división son, en su mayoría, aquellos que comienzan a tener sus primeras experiencias en torneos. Generalmente, se trata de deportistas que juegan de manera recreativa, no suelen practicar en clubes, juegan de forma intuitiva y no utilizan materiales de competición.</p>
             </div>
             <div className="categoria-card">
                 <h2>Intermedio</h2>
-                <p>Son jugadores con poca experiencia y algunos comienzan a mostrar técnicas aprendidas tomando clases en clubes. algunos ya utilizan materiales de competicion y cuentan con mayor experiencia competiendo.</p>
+                <p>Son jugadores con poca experiencia, aunque algunos comienzan a mostrar técnicas aprendidas en clases en clubes. Algunos ya utilizan materiales de competición y tienen más experiencia en competencias.</p>
             </div>
             <div className="categoria-card">
                 <h2>Avanzado</h2>
-                <p>Son jugadores que muestran un dominio más amplio de técnicas, tácticas y estrategias de juego. En su mayoría practican regularmente en clubes y muestran progresos en el dominio de técnicas mas avanzadas de juego, como la realización de topspins y otros efectos, tanto de drive como de revés.</p>
+                <p>SSon jugadores que demuestran un dominio más amplio de técnicas, tácticas y estrategias de juego. En su mayoría, practican regularmente en clubes y han mostrado progresos en el dominio de técnicas más avanzadas, como la ejecución de topspins y otros efectos.</p>
             </div>
             <div className="categoria-card">
                 <h2>Primera</h2>
-                <p>Son jugadores altamente experimentados que entrenan en clubes o por su cuenta, pero con alta exigencia. Utilizan gomas y maderas de competición y poseen amplios conocimientos sobre técnicas y tácticas de juego</p>
+                <p>Son jugadores altamente experimentados que entrenan en clubes o de manera autónoma, siempre con un alto nivel de exigencia. Poseen amplios conocimientos sobre técnicas y tácticas de juego.</p>
             </div>
+            
         </div>
       </div>
     </section>

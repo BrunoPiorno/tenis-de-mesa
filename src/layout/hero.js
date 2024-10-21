@@ -1,6 +1,6 @@
 // Hero.js
 import React from 'react';
-import pingpongImage from '../images/pingpong.jpg'; 
+import pingpongImage from '../images/test.png'; 
 import './hero.css';
 
 const Hero = () => {
@@ -8,10 +8,6 @@ const Hero = () => {
     <section className="hero">
       <div className="hero_image">
         <img src={pingpongImage} alt="Imagen de Hero" className="hero-image" /> 
-      </div>
-      <div className="hero-content">
-        <h1 className="hero-title">COPA INVIERNO 2024 <br/> TRENQUE LAUQUEN</h1>
-        <button><a href="#inscripcion">Preinscripción Al Torneo</a></button>
       </div>
     </section>
   );

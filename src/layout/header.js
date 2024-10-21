@@ -30,6 +30,7 @@ const Header = () => {
               <ul className="menu" onClick={closeMenu}>
                 <li><a href="#categorias" className="menu-link">Categorias</a></li>
                 <li><a href="#sponsors" className="menu-link">Sponsors</a></li>
+                {/* <li><a href="#clases" className="menu-link">Clases</a></li> */}
                 <li><a href="#inscripcion" className="menu-link">Preinscripción</a></li>
                 <li><a href="#torneos" className="menu-link">Torneos</a></li>
               </ul>

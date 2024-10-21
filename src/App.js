@@ -7,6 +7,7 @@ import SponsorsGrid from './components/sponsors';
 import MainComponent from './components/maincomponent';
 import Form from './components/form';
 import Footer from './layout/footer';
+// import Clases from './components/clases';
 import './App.css';
 import initializeAnalytics from './analytics';
 import ReactGA from 'react-ga4';

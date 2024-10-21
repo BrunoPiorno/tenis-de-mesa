@@ -17,9 +17,11 @@ import logo12 from '../images/LOGO-12.svg';
 import logo13 from '../images/LOGO-13.svg';
 import logo14 from '../images/LOGO-14.png';
 import logo15 from '../images/LOGO-15.png';
+import logo16 from '../images/LOGO-16.png';
+import logo17 from '../images/LOGO-17.png';
+import logo18 from '../images/LOGO-18.png';
 
-
-const sponsorImages = [logo1,logo2, logo3, logo4,logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13,logo14,logo15];
+const sponsorImages = [logo1,logo2, logo3, logo4,logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13,logo14,logo15,logo16,logo17,logo18];
 
 const SponsorsGrid = () => {
   return (
