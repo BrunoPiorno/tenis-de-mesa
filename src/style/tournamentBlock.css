@@ -1,61 +1,129 @@
-.torneos {
-    padding-bottom: 40px;
+/* Estilos generales */
+.tournamentBlock {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaciado entre los elementos */
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
 
-.torneos h2 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
+.tournamentBlock:hover {
+  transform: translateY(-5px); /* Efecto de elevar la card al pasar el ratón */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
 }
 
-.tournament-block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.iconRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px; /* Aumenta el tamaño de la fuente */
+  color: #333;
+}
+
+.iconRow span {
+  font-weight: 600; /* Negrita para los textos */
+}
+
+.description {
+  margin: 12px 0;
+  color: #555;
+  font-size: 15px; /* Mejor tamaño para la legibilidad */
+  line-height: 1.5;
+}
+
+.inscriptionDetails {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #444;
+  border-left: 4px solid #1c4857; /* Línea de color en el lado izquierdo */
+}
+
+.finished {
+  opacity: 0.6; /* Reducir la opacidad de los torneos finalizados */
+  text-decoration: line-through; /* Tachar los eventos finalizados */
+}
+
+.finishedTag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+}
+
+.finishedTag span {
+  text-transform: uppercase;
+}
+
+/* Estilos del componente principal */
+.tournamentSection {
+  padding: 40px 20px;
+  background: #f5f5f5;
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c4857;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste en las columnas para móviles */
+  gap: 20px;
+  justify-items: center; /* Centrar los elementos dentro de cada celda */
+}
+
+/* Medios de comunicación */
+@media (max-width: 768px) {
+  .tournamentBlock {
+    padding: 15px;
   }
 
-  .tournament-block svg {
-    color: #1C4857;
+  .iconRow {
+    font-size: 14px;
   }
-  
-  .tournament-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+
+  .description {
+    font-size: 14px;
   }
-  .tournament-icon {
-    display: flex;
-    align-items: center;
+
+  .finishedTag {
+    font-size: 10px;
   }
-  
-  .tournament-icon svg {
-    margin-right: 5px;
+
+  .title {
+    font-size: 30px;
   }
-  
-  .tournament-text {
-    grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+  .tournamentBlock {
+    padding: 10px;
   }
-  
-  .tournament-finalizado {
-    display: flex;
-    align-items: center;
-    color: red;
-    margin-top: 10px;
+
+  .iconRow {
+    font-size: 12px;
   }
-  
-  .finalizado-icon {
-    margin-right: 5px;
+
+  .description {
+    font-size: 13px;
   }
-  @media (max-width: 750px) {
-    .torneos h2 {
-        font-size: 24px;
-    }
-    .tournament-grid {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-    }
+
+  .title {
+    font-size: 24px;
   }
+}
