@@ -7,6 +7,8 @@ import SponsorsGrid from './components/sponsors';
 import MainComponent from './components/maincomponent';
 import Form from './components/form';
 import Footer from './layout/footer';
+import CalendarComponent from './components/CalendarComponent';
+
 // import Clases from './components/clases';
 import './App.css';
 import initializeAnalytics from './analytics';
@@ -25,7 +27,8 @@ const App = () => {
         <Hero />
         <Categorias />
         <SponsorsGrid />
-        <Form/>
+        {/* <Form/> */}
+        <CalendarComponent />
         <MainComponent />
         <Footer />
       </div>

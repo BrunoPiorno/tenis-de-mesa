@@ -1,9 +1,16 @@
 /* Header.css */
 .header {
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 2;
+  top: 0;
+  z-index: 1000;
   position: fixed;
   width: 100%;
+  background-color: transparent; /* Fondo por defecto */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Esta clase se añade cuando se hace scroll */
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__cont {

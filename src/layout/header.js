@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './header.css'; 
 import logo from '../images/logo-posta.png'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,7 @@ import WhatsApp from '../components/whatsapp';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -17,11 +18,27 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // Si el scroll vertical es mayor a 50px, activa la clase "scrolled"
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="header__cont">
-          <div className="logo"><img src={logo} alt="Logo" /></div>
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+          </div>
           <div className="menu-icon" onClick={toggleMenu}>
             <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
           </div>
@@ -30,8 +47,7 @@ const Header = () => {
               <ul className="menu" onClick={closeMenu}>
                 <li><a href="#categorias" className="menu-link">Categorias</a></li>
                 <li><a href="#sponsors" className="menu-link">Sponsors</a></li>
-                {/* <li><a href="#clases" className="menu-link">Clases</a></li> */}
-                <li><a href="#inscripcion" className="menu-link">Preinscripción</a></li>
+                <li><a href="#calendar" className="menu-link">Calendario</a></li>
                 <li><a href="#torneos" className="menu-link">Torneos</a></li>
               </ul>
               <div className="social-icons">

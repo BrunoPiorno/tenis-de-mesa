@@ -1,7 +1,7 @@
 // Hero.js
 import React from 'react';
-import pingpongImage from '../images/test.png'; 
-import mobile from '../images/mobile.png'; 
+import pingpongImage from '../images/hero.png'; 
+import mobile from '../images/hero.png'; 
 import './hero.css';
 
 const Hero = () => {

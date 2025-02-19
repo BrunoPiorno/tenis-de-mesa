@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .hero-content {
@@ -27,7 +27,7 @@
 
 .hero_image {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* Ocultar imagen móvil en dispositivos de escritorio */
@@ -50,6 +50,7 @@
   /* Mostrar imagen móvil en dispositivos móviles */
   .mobile {
     display: block;
+    height: 100vw;
   }
 }
 

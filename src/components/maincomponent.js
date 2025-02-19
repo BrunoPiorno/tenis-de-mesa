@@ -49,6 +49,15 @@ const MainComponent = () => {
       aperturaDeInscripcion: "22/11",
       cierreDeInscripcion: "06/12 - 12:00 AM",
     },
+    {
+      date: "15/03/2025",
+      day: "Sábado",
+      startTime: "9:00 AM",
+      location: "Trenque Lauquen",
+      text: "Copa Almar, con servicio de cantina",
+      aperturaDeInscripcion: "01/03",
+      cierreDeInscripcion: "14/03 - 12:00 AM",
+    },
   ];
 
   return (
