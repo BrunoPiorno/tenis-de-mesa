@@ -101,53 +101,55 @@ const MyCalendar = () => {
 
   return (
     <div className="calendar" id="calendar">
-      <h2 className="calendar-title">Calendario de Eventos y Entrenamientos</h2>
-      <Calendar
-        className="calendar-container"
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        culture="es"
-        messages={{
-          today: "Hoy",
-          previous: "Anterior",
-          next: "Siguiente",
-          month: "Mes",
-          week: "Semana",
-          day: "Día",
-          agenda: "Agenda",
-          noEventsInRange: "No hay eventos en este rango.",
-          showMore: (count) => `+${count} más`,
-          event: "Evento",
-          date: "Fecha",
-          time: "Hora",
-        }}
-        style={{ height: 500 }}
-        onSelectEvent={(event) => setHoveredEvent(event)}
-        onMouseLeave={() => setTooltipContent("")}
-        onMouseOver={({ start }) => {
-          const eventsForDate = getEventsForDate(start);
-          const formattedEvents = eventsForDate
-            .map(event => `${event.title} (${format(event.start, "HH:mm")} - ${format(event.end, "HH:mm")})`)
-            .join('\n');
-          setTooltipContent(formattedEvents);
-        }}
-        components={{
-          event: ({ event }) => (
-            <div
-              className="event-item"
-              data-tooltip-id="event-tooltip"
-              data-tooltip-content={`${event.title} (${format(event.start, "HH:mm")} - ${format(event.end, "HH:mm")})`}
-            >
-              {event.title}
-            </div>
-          ),
-        }}
-      />
-      <Tooltip id="event-tooltip" place="top" effect="solid">
-        {tooltipContent}
-      </Tooltip>
+      <div className="container">
+        <h2 className="calendar-title">Calendario de Eventos y Entrenamientos</h2>
+        <Calendar
+          className="calendar-container"
+          localizer={localizer}
+          events={events}
+          startAccessor="start"
+          endAccessor="end"
+          culture="es"
+          messages={{
+            today: "Hoy",
+            previous: "Anterior",
+            next: "Siguiente",
+            month: "Mes",
+            week: "Semana",
+            day: "Día",
+            agenda: "Agenda",
+            noEventsInRange: "No hay eventos en este rango.",
+            showMore: (count) => `+${count} más`,
+            event: "Evento",
+            date: "Fecha",
+            time: "Hora",
+          }}
+          style={{ height: 500 }}
+          onSelectEvent={(event) => setHoveredEvent(event)}
+          onMouseLeave={() => setTooltipContent("")}
+          onMouseOver={({ start }) => {
+            const eventsForDate = getEventsForDate(start);
+            const formattedEvents = eventsForDate
+              .map(event => `${event.title} (${format(event.start, "HH:mm")} - ${format(event.end, "HH:mm")})`)
+              .join('\n');
+            setTooltipContent(formattedEvents);
+          }}
+          components={{
+            event: ({ event }) => (
+              <div
+                className="event-item"
+                data-tooltip-id="event-tooltip"
+                data-tooltip-content={`${event.title} (${format(event.start, "HH:mm")} - ${format(event.end, "HH:mm")})`}
+              >
+                {event.title}
+              </div>
+            ),
+          }}
+        />
+        <Tooltip id="event-tooltip" place="top" effect="solid">
+          {tooltipContent}
+        </Tooltip>
+      </div>
     </div>
   );
 };
