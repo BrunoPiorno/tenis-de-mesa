@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './layout/header';
 import Hero from './layout/hero';
 import Categorias from './components/categorias';
@@ -8,11 +8,10 @@ import MainComponent from './components/maincomponent';
 import Form from './components/form';
 import Footer from './layout/footer';
 import CalendarComponent from './components/CalendarComponent';
-
-// import Clases from './components/clases';
-import './App.css';
 import initializeAnalytics from './analytics';
 import ReactGA from 'react-ga4';
+import './App.css';
+import AnimatedBlock from './components/effect';
 
 const App = () => {
   useEffect(() => {
@@ -22,25 +21,34 @@ const App = () => {
   return (
     <Router>
       <Analytics />
-      <div>
-        <Header />
-        <Hero />
-        <Categorias />
-        <SponsorsGrid />
-        {/* <Form/> */}
-        <CalendarComponent />
-        <MainComponent />
-        <Footer />
-      </div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<MainComponent />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 };
+
+const Layout = ({ children }) => (
+  <div>
+    <Header />
+    <AnimatedBlock><Hero /></AnimatedBlock>
+    <AnimatedBlock><Categorias /></AnimatedBlock>
+    <AnimatedBlock><SponsorsGrid /></AnimatedBlock>
+    <AnimatedBlock><CalendarComponent /></AnimatedBlock>
+    <AnimatedBlock>{children}</AnimatedBlock>
+    <Footer />
+  </div>
+);
 
 const Analytics = () => {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+    if (ReactGA.isInitialized) {
+      ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+    }
   }, [location]);
 
   return null;

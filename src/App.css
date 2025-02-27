@@ -48,6 +48,18 @@ header {
   text-align: center;
 }
 
+.animated-block {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.animated-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .container {
   width: calc(100% - 60px);
   padding: 0 30px;
