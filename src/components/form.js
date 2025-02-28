@@ -1,16 +1,16 @@
 import React from 'react';
 
 const GoogleForm = () => {
-  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdg7X1GTKO5pxn8qEecUxZDsmpvLvszDJn192cTfnEOFIePKg/viewform?usp=sf_link";
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdoYS_BsmflOshW7C1IpR0Tta5XYEaIJNl_udKbWkfjqHUytw/viewform?usp=header";
   
   return (
     <section id="inscripcion">
         <div className="google-form">
             <div className="container">
-                {/* <h2>Formulario De Preinscripción</h2> */}
+                { <h2>Formulario De Preinscripción</h2>}
 
                 {/* { <h2 style={{ color: "red" }}>Preinscripción Finalizada</h2> } */}
-                {/* <iframe
+                <iframe
                   src={formUrl}
                   width="640"
                   height="1291"
@@ -19,7 +19,7 @@ const GoogleForm = () => {
                   marginWidth="0"
                 >
                   Cargando…
-                </iframe> */}
+                </iframe>
             </div>
         </div>
     </section>

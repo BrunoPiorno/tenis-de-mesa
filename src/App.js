@@ -37,6 +37,7 @@ const Layout = ({ children }) => (
     <AnimatedBlock><Categorias /></AnimatedBlock>
     <AnimatedBlock><SponsorsGrid /></AnimatedBlock>
     <AnimatedBlock><CalendarComponent /></AnimatedBlock>
+    <AnimatedBlock><Form /></AnimatedBlock>
     <AnimatedBlock>{children}</AnimatedBlock>
     <Footer />
   </div>
