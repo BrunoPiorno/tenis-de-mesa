@@ -50,6 +50,7 @@ const Header = () => {
                 <li><a href="#calendar" className="menu-link">Calendario</a></li>
                 <li><a href="#inscripcion" className="menu-link">Preinscripción</a></li>
                 <li><a href="#torneos" className="menu-link">Torneos</a></li>
+                <a className="ranking-button" href="https://trenquetdmranking.com.ar/" target="_blank" rel="noopener noreferrer">Ranking</a>
               </ul>
               <div className="social-icons">
                 <a href="https://www.instagram.com/trenque.tdm/" target="_blank" rel="noopener noreferrer">

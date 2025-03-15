@@ -79,6 +79,7 @@ header {
       width: calc(100% - 30px);
       padding: 0 15px;
     }
+
   }
   html {
     scroll-behavior: smooth;
@@ -120,3 +121,31 @@ header {
     background-color: #0056b3;
   }
   
+  .ranking-button {
+    background-color: #1C4857;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .ranking-button:hover {
+    background-color: white;
+    color: #1C4857;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(28, 72, 87, 0.4);
+  }
+  
+  .ranking-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(28, 72, 87, 0.7);
+  }
+  
+  @media (max-width: 750px) {
+    .ranking-button {margin-right: 0;}
+  }
