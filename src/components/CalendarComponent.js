@@ -74,23 +74,37 @@ const generateTrainingEvents = () => {
   return events;
 };
 
-// Generar el evento del torneo el 15 de marzo
-const generateTournamentEvent = () => {
+// Generar los eventos de torneos
+const generateTournamentEvents = () => {
   const year = new Date().getFullYear();
-  const tournamentDate = new Date(year, 2, 15); // 15 de marzo (mes 2)
-  return [{
-    title: "Copa Almar",
-    start: setHours(setMinutes(tournamentDate, 0), 9),
-    end: setHours(setMinutes(tournamentDate, 0), 18)
-  }];
+  return [
+    {
+      title: "Copa Almar",
+      start: setHours(setMinutes(new Date(year, 2, 15), 0), 9), // 15 de marzo
+      end: setHours(setMinutes(new Date(year, 2, 15), 0), 18),
+      type: 'tournament'
+    },
+    {
+      title: "Torneo de Mayo",
+      start: setHours(setMinutes(new Date(year, 4, 31), 0), 9), // 31 de mayo
+      end: setHours(setMinutes(new Date(year, 4, 31), 0), 18),
+      type: 'tournament'
+    },
+    {
+      title: "Torneo de Agosto",
+      start: setHours(setMinutes(new Date(year, 7, 30), 0), 9), // 30 de agosto
+      end: setHours(setMinutes(new Date(year, 7, 30), 0), 18),
+      type: 'tournament'
+    }
+  ];
 };
 
 const MyCalendar = () => {
-  // Combinar eventos de febrero, entrenamientos y torneo
+  // Combinar eventos de febrero, entrenamientos y torneos
   const events = [
     ...generateFebEvents(),
     ...generateTrainingEvents(),
-    ...generateTournamentEvent()
+    ...generateTournamentEvents()
   ];
   const [hoveredEvent, setHoveredEvent] = useState(null);
   const [tooltipContent, setTooltipContent] = useState("");
@@ -137,7 +151,7 @@ const MyCalendar = () => {
           components={{
             event: ({ event }) => (
               <div
-                className="event-item"
+                className={`event-item ${event.type === 'tournament' ? 'tournament-event' : ''}`}
                 data-tooltip-id="event-tooltip"
                 data-tooltip-content={`${event.title} (${format(event.start, "HH:mm")} - ${format(event.end, "HH:mm")})`}
               >

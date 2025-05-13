@@ -1,7 +1,7 @@
 import React from 'react';
 
 const GoogleForm = () => {
-  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdoYS_BsmflOshW7C1IpR0Tta5XYEaIJNl_udKbWkfjqHUytw/viewform?usp=header";
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc8u71V4UkZBt07nrdqZKhoZ_U7vQp-SojtYpPN7LT8n_NdOg/viewform?usp=header";
   
   return (
     <section id="inscripcion">

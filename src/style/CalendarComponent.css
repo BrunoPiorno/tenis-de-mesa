@@ -3,19 +3,23 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+  max-width: 1000px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
   .calendar-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #1c4857;
-  }
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c4857;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
   
 .rbc-event {
@@ -24,6 +28,18 @@
   border-radius: 5px;
   padding: 5px;
   font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.rbc-event:hover {
+  transform: scale(1.02);
+}
+
+.tournament-event {
+  background-color: #e63946 !important;
+  color: white !important;
+  font-weight: bold !important;
+  border: 2px solid #e63946 !important;
 }
 .rbc-toolbar .rbc-toolbar-label {font-weight: bold; color: #1c4857; }
 
@@ -35,7 +51,10 @@
   background-color: #1c4857 !important;
   color: white !important;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 8px 16px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.2s ease;
 }
 
 .rbc-toolbar button:hover {
@@ -44,4 +63,8 @@
 
 .event-item {
   cursor: pointer;
+  padding: 2px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
