@@ -16,12 +16,12 @@ const MainComponent = () => {
       cierreDeInscripcion: "14/03 - 12:00 AM",
     },
     {
-      date: "15/06/2025",
+      date: "31/05/2025",
       day: "Sábado",
       startTime: "9:00 AM",
       location: "30 De Agosto",
       text: "Torneo Tenis De Mesa en Cuartel de Bomberos",
-      aperturaDeInscripcion: "15/06",
+      aperturaDeInscripcion: "16/05",
       cierreDeInscripcion: "30/06 - 12:00 AM",
     },
   ];
