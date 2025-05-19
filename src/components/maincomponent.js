@@ -22,7 +22,7 @@ const MainComponent = () => {
       location: "30 De Agosto",
       text: "Torneo Tenis De Mesa en Cuartel de Bomberos",
       aperturaDeInscripcion: "16/05",
-      cierreDeInscripcion: "30/06 - 12:00 AM",
+      cierreDeInscripcion: "30/05 - 12:00 AM",
     },
   ];
 
