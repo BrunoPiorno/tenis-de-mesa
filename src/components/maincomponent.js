@@ -24,6 +24,15 @@ const MainComponent = () => {
       aperturaDeInscripcion: "16/05",
       cierreDeInscripcion: "30/05 - 12:00 AM",
     },
+    {
+      date: "16/07/2025",
+      day: "Sábado",
+      startTime: "9:00 AM",
+      location: "Trenque Lauquen",
+      text: "Copa Invierno",
+      aperturaDeInscripcion: "10/07",
+      cierreDeInscripcion: "15/07 - 12:00 AM",
+    },
   ];
 
   return (
@@ -44,3 +53,4 @@ const MainComponent = () => {
 };
 
 export default MainComponent;
+ 

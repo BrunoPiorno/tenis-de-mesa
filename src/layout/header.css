@@ -11,7 +11,7 @@
 
 /* Esta clase se añade cuando se hace scroll */
 .header.scrolled {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #285c6f;
 }
 
 .header__cont {

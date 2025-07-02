@@ -95,6 +95,12 @@ const generateTournamentEvents = () => {
       start: setHours(setMinutes(new Date(year, 7, 30), 0), 9), // 30 de agosto
       end: setHours(setMinutes(new Date(year, 7, 30), 0), 18),
       type: 'tournament'
+    },
+    {
+      title: "Copa Invierno",
+      start: setHours(setMinutes(new Date(year, 7, 16), 0), 9), // 16 de julio
+      end: setHours(setMinutes(new Date(year, 7, 16), 0), 18),
+      type: 'tournament'
     }
   ];
 };

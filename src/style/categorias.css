@@ -1,87 +1,78 @@
-/* Categoria.css */
+.categorias {
+  padding: 60px 20px;
+  color: #f0f0f0;
+  font-family: 'Raleway', sans-serif;
+}
 
 .categorias h1 {
-    text-align: center;
+  text-align: center;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
+    color: black;
 }
 
+.categorias__cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.categoria-card {
+  background: linear-gradient(135deg, #2d677d, #1f4d5e);
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+  cursor: default;
+}
+
+.categoria-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #3a7a94, #24637b);
+}
+
+.categoria-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f9f9f9;
+  margin: 0;
+}
+
+.categoria-card h2 svg {
+  color: #fbc531;
+  font-size: 2rem;
+}
+
+.categoria-card p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #d1dce4;
+  flex-grow: 1;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 900px) {
   .categorias__cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 0 150px;
+    gap: 30px;
   }
-  
+}
 
-  .categoria-card {
-    padding: 20px;
-    background-color: #1C4857; 
-    color: white;
-    border-radius: 20px;
-    width: calc(33.33% - 10px); 
-    max-width: 300px;
-    box-sizing: border-box;
+@media (max-width: 600px) {
+  .categorias h1 {
+    font-size: 2.2rem;
   }
-
-  .categoria-card:nth-child(4),
-  .categoria-card:nth-child(5) {
-    width: calc(33.33% - 10px); 
-    max-width: 300px;
-  }
-
-
-  
-  .categoria-card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .categoria-card p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-
-  @media (max-width: 1100px) {
-    .categorias__cont {
-          padding: 0 50px; /* Reduce el padding */
-      }
-
-      .categoria-card {
-          width: calc(50% - 10px); /* Dos columnas en pantallas medianas */
-      }
-
-      .categoria-card:nth-child(4),
-      .categoria-card:nth-child(5) {
-          width: calc(50% - 10px); /* Mantener dos columnas para los últimos elementos */
-      }
-  }
-
-  @media (max-width: 750px) {
-    .categorias__cont {
-        padding: 0 20px; /* Padding más pequeño */
-    }
-
-    .categoria-card {
-        width: 100%
-    }
-    .categoria-card:nth-child(4),
-    .categoria-card:nth-child(5) {
-        width: 100%;
-    }
-    .categorias h1 {
-        font-size: 25px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .categorias__cont {
-        padding: 0 10px; /* Padding mínimo para móviles */
-    }
 }

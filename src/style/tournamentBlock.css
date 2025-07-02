@@ -22,6 +22,7 @@
   overflow: hidden;
   border: 1px solid #e9ecef;
   height: 100%;
+  width: 100%;
 }
 
 .tournamentBlock::before {
