@@ -31,7 +31,7 @@ const MainComponent = () => {
       location: "Trenque Lauquen",
       text: "Copa Invierno",
       aperturaDeInscripcion: "10/07",
-      cierreDeInscripcion: "15/07 - 12:00 AM",
+      cierreDeInscripcion: "25/07 - 12:00 AM",
     },
   ];
 
