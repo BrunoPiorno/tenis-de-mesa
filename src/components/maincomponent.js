@@ -29,7 +29,7 @@ const MainComponent = () => {
       day: "Sábado",
       startTime: "9:00 AM",
       location: "Trenque Lauquen",
-      text: "Copa Invierno",
+      text: "Copa De Invierno, en Barrio Alegre",
       aperturaDeInscripcion: "10/07",
       cierreDeInscripcion: "25/07 - 12:00 AM",
     },
