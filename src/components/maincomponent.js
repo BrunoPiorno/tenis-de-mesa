@@ -25,7 +25,7 @@ const MainComponent = () => {
       cierreDeInscripcion: "30/05 - 12:00 AM",
     },
     {
-      date: "16/07/2025",
+      date: "26/07/2025",
       day: "Sábado",
       startTime: "9:00 AM",
       location: "Trenque Lauquen",
