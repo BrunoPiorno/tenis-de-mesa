@@ -51,11 +51,6 @@
   margin: 0;
 }
 
-.categoria-card h2 svg {
-  color: #fbc531;
-  font-size: 2rem;
-}
-
 .categoria-card p {
   font-size: 1.05rem;
   line-height: 1.75;

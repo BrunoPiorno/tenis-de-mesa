@@ -1,6 +1,8 @@
 // Categoria.js
 import React from 'react';
 import '../style/categorias.css'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTableTennisPaddleBall } from '@fortawesome/free-solid-svg-icons';
 
 const Categoria = () => {
   return (
@@ -14,8 +16,12 @@ const Categoria = () => {
           texto: 'Son jugadores hasta 15 años. El énfasis en la diversión es crucial, ya que ayuda a cultivar su amor por el deporte desde una edad temprana.',
         },
         {
+          titulo: 'Quinta',
+          texto: 'Los jugadores de esta categoría son, en su mayoría, aquellos que comienzan a tener sus primeras experiencias en torneos. Generalmente, se trata de deportistas que juegan de manera recreativa, no suelen practicar en clubes, juegan de forma intuitiva y no utilizan materiales de competición.',
+        },
+        {
           titulo: 'Cuarta',
-          texto: 'Los jugadores de esta división son, en su mayoría, aquellos que comienzan a tener sus primeras experiencias en torneos. Generalmente, se trata de deportistas que juegan de manera recreativa, no suelen practicar en clubes, juegan de forma intuitiva y no utilizan materiales de competición.',
+          texto: 'Los jugadores de esta categoría cuentan con más experiencia que en Quinta y comienzan a consolidar fundamentos técnicos. Suelen practicar en clubes de manera más regular, utilizan materiales de competición y ya aplican estrategias básicas durante los partidos.',
         },
         {
           titulo: 'Tercera',
@@ -31,7 +37,7 @@ const Categoria = () => {
         },
       ].map((cat, i) => (
         <div className="categoria-card" key={i}>
-          <h2>{cat.titulo}</h2>
+          <h2>{cat.titulo} <FontAwesomeIcon icon={faTableTennisPaddleBall} /></h2>
           <p>{cat.texto}</p>
         </div>
       ))}

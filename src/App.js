@@ -7,7 +7,7 @@ import SponsorsGrid from './components/sponsors';
 import MainComponent from './components/maincomponent';
 import Form from './components/form';
 import Footer from './layout/footer';
-import CalendarComponent from './components/CalendarComponent';
+//import CalendarComponent from './components/CalendarComponent';
 import initializeAnalytics from './analytics';
 import ReactGA from 'react-ga4';
 import './App.css';
@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
     <AnimatedBlock><Hero /></AnimatedBlock>
     <AnimatedBlock><Categorias /></AnimatedBlock>
     <AnimatedBlock><SponsorsGrid /></AnimatedBlock>
-    <AnimatedBlock><CalendarComponent /></AnimatedBlock>
+    {/*<AnimatedBlock><CalendarComponent /></AnimatedBlock>*/}
     <AnimatedBlock><Form /></AnimatedBlock>
     <AnimatedBlock>{children}</AnimatedBlock>
     <Footer />

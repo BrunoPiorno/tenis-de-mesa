@@ -33,6 +33,15 @@ const MainComponent = () => {
       aperturaDeInscripcion: "10/07",
       cierreDeInscripcion: "25/07 - 12:00 AM",
     },
+    {
+      date: "096/09/2025",
+      day: "Sábado",
+      startTime: "8:30 AM",
+      location: "Trenque Lauquen",
+      text: "Torneo Tenis De Mesa en Barrio Alegre",
+      aperturaDeInscripcion: "26/08",
+      cierreDeInscripcion: "05/09 - 12:00 AM",
+    },
   ];
 
   return (
