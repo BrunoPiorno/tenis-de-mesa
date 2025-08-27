@@ -1,7 +1,7 @@
 import React from 'react';
 
 const GoogleForm = () => {
-    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdl76nJ25VjPby0_OQ-VaC6C4WUaEZwB5krWzc_celpIhaTrw/viewform?usp=header";
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSei7g8hdoZSiOsxh4ncM0b1YdTdOKMOeMGNzCl6tJkND8bFUg/viewform?usp=header";
   
   return (
     <section id="inscripcion">
@@ -9,8 +9,8 @@ const GoogleForm = () => {
             <div className="container">
                 { <h2>Formulario De Preinscripción</h2>}
 
-                {<h2 style={{ color: "red" }}>Preinscripción Finalizada, Nos vemos el 26/7</h2> }
-                {/* <iframe
+                {/* {<h2 style={{ color: "red" }}>Preinscripción Finalizada, Nos vemos el 26/7</h2> } */}
+                {<iframe
                   src={formUrl}
                   width="640"
                   height="1291"
@@ -19,7 +19,7 @@ const GoogleForm = () => {
                   marginWidth="0"
                 >
                   Cargando…
-                </iframe> */}
+                </iframe>   }
             </div>
         </div>
     </section>
