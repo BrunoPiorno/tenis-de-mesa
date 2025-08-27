@@ -47,7 +47,7 @@ const Header = () => {
               <ul className="menu" onClick={closeMenu}>
                 <li><a href="#categorias" className="menu-link">Categorias</a></li>
                 <li><a href="#sponsors" className="menu-link">Sponsors</a></li>
-                <li><a href="#calendar" className="menu-link">Calendario</a></li>
+                {/* <li><a href="#calendar" className="menu-link">Calendario</a></li> */}
                 <li><a href="#inscripcion" className="menu-link">Preinscripción</a></li>
                 <li><a href="#torneos" className="menu-link">Torneos</a></li>
                 <a className="ranking-button" href="https://trenquetdmranking.com.ar/" target="_blank" rel="noopener noreferrer">Ranking</a>
