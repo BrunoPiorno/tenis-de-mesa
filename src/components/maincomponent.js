@@ -42,6 +42,15 @@ const MainComponent = () => {
       aperturaDeInscripcion: "26/08",
       cierreDeInscripcion: "05/09 - 12:00 AM",
     },
+    {
+      date: "29/11/2025",
+      day: "Sábado",
+      startTime: "8:30 AM",
+      location: "Beruti",
+      text: "Polideportivo de Beruti",
+      aperturaDeInscripcion: "19/11",
+      cierreDeInscripcion: "27/11 - 11:59 PM",
+    }
   ];
 
   return (

@@ -21,7 +21,7 @@ import logo16 from '../images/LOGO-16.png';
 //import logo17 from '../images/LOGO-17.png';
 import logo18 from '../images/LOGO-18.png';
 //import logo19 from '../images/LOGO-19.jpg';
-import logomio from '../images/logo-mio.png';
+import logomio from '../images/logo-web-black.png';
 
 const sponsorImages = [logo1,logo2, logo4,logo5, logo8, logo9, logo10, logo11, logo13,logo16,logo18,logomio];
 

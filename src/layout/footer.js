@@ -20,7 +20,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <p>Sitio Realizado por <a href="https://brunopiorno.com.ar">brunopiorno.com.ar</a></p>
+            <p>Sitio Realizado por <a href="https://globalalora.com">Alora ❤️</a></p>
         </div>
     </footer>
   );
